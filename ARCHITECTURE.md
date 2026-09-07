@@ -51,11 +51,12 @@ None — everything is local to the Unity project, no network calls or database.
 ## What's not here
 
 This repo holds the C# scripts only — no `.unity` scenes, no prefabs, no meshes, no audio, no
-Unity project settings. `document/UNITY WORKSHOP.pdf` is the original workshop brief and
-`build/build.pdf` is a short build writeup; neither is game content. Without the scenes and assets
-behind them, these scripts don't compile into a project or run on their own — this is a
-documentation pass over the part of the project that's actually mine to show on its own: the code.
+Unity project settings. `document/UNITY WORKSHOP.pdf` is the original workshop brief; it is not
+game content. Without the scenes and assets behind them, these scripts don't compile into a
+project or run on their own — this is a documentation pass over the part of the project that's
+actually mine to show on its own: the code.
 
 ## Running it
 
-Not runnable from this repo alone — see "What's not here" above.
+The scripts here don't run on their own. The full playable game (Windows and Linux) is attached
+to the [latest release](../../releases/latest).
