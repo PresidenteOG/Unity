@@ -21,6 +21,14 @@ prefabs or meshes), so there is nothing to open in the Unity editor here. See
 [ARCHITECTURE.md](./ARCHITECTURE.md) for what the code does and how the two game
 modes fit together.
 
+## Screenshots
+
+From the Windows build.
+
+![Title screen — pick Free Way or Ball Runner](./docs/screenshots/menu.png)
+
+![Free Way running: the player on a lookout platform in the terrain, the HUD tracking the five orbs to find and a timer](./docs/screenshots/free-way.png)
+
 ## Architecture
 
 ![Unity Minigames architecture: BallRunner and Freeway/Terrain share one menu, pause and victory pipeline](./docs/architecture.png)
