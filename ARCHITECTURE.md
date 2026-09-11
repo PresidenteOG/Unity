@@ -1,9 +1,10 @@
 # Architecture
 
-Two small 3D minigames built during a Unity workshop: **BallRunner** (roll a ball through a
-sequence of levels, dodge an enemy, collect coins to open a gate) and a **Freeway/Terrain runner**
-(moving platforms, a portal that swaps cameras, purple collectibles as an optional side quest).
-Both share one main menu, one pause system, and one victory screen.
+Two small 3D minigames built during a Unity workshop: **Ball Runner** (roll a ball through a
+sequence of levels, dodge an enemy, collect every coin to open the yellow gate) and **Free Way**
+(explore an open terrain and find all five hidden purple orbs — a portal swaps cameras at the
+start, a few platforms move, and there is no enemy or fail state). Both share one main menu, one
+pause system, and one victory screen.
 
 ![Unity Minigames architecture: BallRunner and Freeway/Terrain share one menu, pause and victory pipeline](./docs/architecture.png)
 
@@ -26,9 +27,10 @@ Scripts are grouped the way the original Unity project organized them:
 - `Sistema/Victoria` — `VictoryUI` (reads whichever run mode just finished), `WinLevel` (advances
   to the next level or routes to the victory scene), `WinScene` (auto-returns to the menu after a
   few seconds).
-- `Terrain` — the second game mode: `PlataformaMovimiento` (moving platform, driven by a
+- `Terrain` — the Free Way game mode: `PlataformaMovimiento` (moving platform, driven by a
   coroutine), `Portal` (shrinks a visual effect, then swaps from the start camera to the player
-  camera), `Mysterys` / `PurpleCollectible` (an optional easter-egg objective).
+  camera), `Mysterys` / `PurpleCollectible` (the five purple orbs — `Mysterys` counts them and
+  loads the victory scene once the last one is picked up).
 - `Vision` — `CameraFollow`, `PauseMenu` (`Time.timeScale` pause), `ScreenFade` (fade-in on scene
   load), `Tiempo` (on-screen timer), `CompleteNote` (a shake-then-fade toast for in-game messages).
 
