@@ -26,7 +26,7 @@ Both games end on the same victory screen, which reports your time and how many 
 
 ## Play it
 
-Playable builds are attached to the [latest release](../../releases/latest):
+Playable builds are attached to the [releases](https://github.com/PresidenteOG/unity-minigames/releases) page:
 
 - **Windows** — download `Windows.zip`, extract, run `My project.exe`
 - **Linux** — download `Ubuntu.zip`, extract, run `Ubuntu.x86_64`
